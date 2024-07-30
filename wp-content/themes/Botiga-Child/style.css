@@ -1,0 +1,680 @@
+/*
+Theme Name: Botiga-Child
+Description: Theme enfant de Botiga. Vous pouvez maintenant effectuer vos modifications en toute sécurité.
+Author: WPMarmite
+Author URI: https://wpmarmite.com
+Template: Botiga
+Version: 1.0
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+#primary{
+    margin: 0;
+}
+
+/* MASQUE LE TITRE DE LA PAGE */
+
+h1.entry-title{
+    display: none;
+    }
+
+/* Le code ci-dessous cible le balise main du code pour outrepasser le padding 15px appliqué de base
+(.site-main.no-sidebar & .site-main)
+*/
+
+.site-main.no-sidebar{
+    padding: 0 !important;
+}
+
+.site-main{
+    padding: 0 !important;
+}
+
+/* HEADER */
+
+#header{
+    background-color: white;
+}
+
+/* ID Header Wordpress */
+
+.elementor-element-d614528{
+    padding: 0;
+}
+
+
+/* menu navigation header*/
+#menu-1-40c32cb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#menu-1-40c32cb li{
+    text-align: center;
+    color: white;
+}
+
+#menu-1-40c32cb a{
+    color: rgb(88, 88, 88);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#menu-1-40c32cb a:hover{
+    font-weight: 500;
+}
+ 
+/*Séparateurs des sections avec background-image blanc*/
+.separator-block{
+    background-size: cover;
+}
+
+/* Selectionne tous les éléments pour les différentes saveur de la page d'accueil, à l'aide
+de leur classes css spécifiques
+*/
+
+.elementor-element-19d5c46 h2, .elementor-element-316a26a h2, .elementor-element-76b35ea h2, .elementor-element-860a14b h2{
+    vertical-align: middle;
+}
+
+.elementor-element-67412f4,.elementor-element-1eb2af4,.elementor-element-4f22afd,.elementor-element-41fc032{
+    font-size: 0.8em;
+}
+
+.flavor-text{
+    vertical-align: middle !important;
+}
+
+/* FORMULAIRE DE CONTACT */
+
+.form-button-style{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Formulaire page nous rencontrer */
+.wpcf7 {
+    display: flex;
+    justify-content: center;
+    /*width: 90%;*/
+}
+
+.wpcf7-form{    
+    z-index: 3;
+}
+.wpcf7-form p{
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.wpcf7-form label{
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.wpcf7-form input{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.wpcf7-form textarea{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    max-width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    resize: unset;
+}
+
+.wpcf7-submit{
+    display: flex;
+    justify-content: center;
+    max-width: 45%;
+    color: white !important;
+    background-color: #e0b9b4 !important;
+    padding: 0;
+    margin: auto;
+    
+} 
+
+.wpcf7-submit:hover{
+    color: white !important;
+    background-color: #c02e45 !important;
+} 
+
+/* !! ici, on selectionne l'element p qui a un enfant avec la classe .wpcf7-submit
+    (donc le boutton de soumission de formulaire) on lui applique un display flex direction column pour
+    pouvoir centrer les deux elements car il contient un spinner lors de l'envoi de formulaire
+*/
+p:has(.wpcf7-submit){
+    display: flex;
+    flex-direction: column;
+}
+
+/* Espace créé par elementor juste avant l'image du footer : On ne l'affiche pas*/
+div > div > div.elementor-element.elementor-element-fe06973.e-flex.e-con-boxed.e-con.e-parent.e-lazyloaded{
+    display: none;
+}
+
+
+/************** PAGE COMMANDER ***********/
+
+.page-id-795{
+    background-color: #3b8e46 !important;
+}
+
+/* Formulaire de commande */
+
+form:has(#order-submit){
+    width: 100%;
+}
+
+.order-container-top{
+    display: flex;
+    flex-direction: column;
+}
+.order-container-top-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.order-container-top-images div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.order-container-top-images h3{
+    color: white;
+    font-size: 2em;
+}
+
+.order-flavor-image-strawberry{
+    background-image: url('../../uploads/img/strawberry-flavor.png');
+}
+.order-flavor-image-raspberry{
+    background-image: url('../../uploads/img/raspberry-flavor.png');
+}
+.order-flavor-image-grapefruit{
+    background-image: url('../../uploads/img/grapefruit-flavor.png');
+}
+.order-flavor-image-lemon{
+    background-image: url('../../uploads/img/lemon-flavor.png');
+}
+
+/* Largeur de l'input*/
+.order-container-top span{
+    width: 10%;
+}
+
+/* Texte dans l'input */
+.order-container-top input{
+    text-align: center;
+    font-size: 1.6em;
+}
+
+/* Gère la partie haute du formulaire */
+.order-container-top p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    width: 85%;
+}
+
+.order-horizontal-separator{
+    border-bottom: solid 2px white;
+}
+
+.order-vertical-separator{
+    border-right: solid 2px white;
+}
+
+/* Gère les parties basses du formulaire */
+form div:has(.order-vertical-separator){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Partie droite*/
+.order-container-right{
+    width: 40%;
+}
+
+/* Espacement des inputs*/
+.order-container-left input, .order-container-right input{
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+/* Couleur des labels*/
+.order-container-left label, .order-container-right label{
+    color: white;
+    font-size: 1.3rem;
+    max-width: 100%;
+}
+
+/* Texte Informations & Livraison*/
+.order-text-left, .order-text-right{
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    padding-top: 40px;
+}
+
+/* Partie gauche */
+.order-container-left{
+    width: 40%;
+}
+
+/* Taille globale du formulaire*/
+.elementor-element-45345a3{
+    width: 100%;
+}
+/* Taille du conteneur du formulaire*/
+.wpcf7-form:has(.wrapper-order-form-planty){
+    width: 67%;
+}
+
+
+
+/* Nom des rubriques (informations et livraison)*/
+.order-form-planty-text-left, .order-form-planty-text-right{
+    color: white;
+    font-family: 'Syne';
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+}
+
+
+p:has(#order-submit){
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#order-submit{
+    max-width: 25%;
+    margin-top: 5%;
+}
+
+/*********** SMARTPHONE ***********/
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+
+    /* Menu Burger smartphone*/
+    #menu-1-40c32cb{
+        border: solid 1px black;
+    }
+
+    #menu-1-40c32cb li{
+        text-align: center;
+    }
+
+    #menu-1-40c32cb li a{
+        font-size: 15px;
+    }
+
+    /*** accueil ***/
+
+    /* Image boisson planty*/
+    .elementor-213 .elementor-element.elementor-element-cc00cb1:not(.elementor-motion-effects-element-type-background), .elementor-213 .elementor-element.elementor-element-cc00cb1 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /* Saveurs accueil smartphone */
+    .elementor-element-a64a328,.elementor-element-eefb2c1,.elementor-element-4c29216,.elementor-element-9756de7{
+         font-size: 0.8rem;
+    }
+
+
+    /* FORMULAIRE NOUS RENCONTRER */
+
+    .wpcf7-form{
+        width: 100%;
+    }
+
+    #image-fleur-contact{
+        display: none;
+    }
+
+    #order-submit{
+        width: 100%;
+    }
+
+    /* FORMULAIRE COMMANDE */
+
+    .order-container-top{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .order-container-top-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 70%;
+        max-width: 70%;
+        height: 700px;
+    }
+    .order-flavor-image-grapefruit,.order-flavor-image-lemon,.order-flavor-image-raspberry,.order-flavor-image-strawberry{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .order-container-top-images h3{
+        color: white;
+        font-size: 2em;
+    }
+    .order-container-top-inputs{
+        width: 35%;
+    }
+    .order-container-top-images div{
+        height: 150px;
+        background-size: cover;
+        width: 90%;
+    }
+    .order-container-top-inputs p{
+        flex-direction: column !important;
+        margin-top: 50px;
+        height: 600px;
+    }
+    .order-container-top-inputs span{
+        width: 90%;
+    }
+
+    /* Informations & Livraison */
+    form div:has(.order-vertical-separator) {
+        flex-direction: column;
+    }
+
+    .order-container-left{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .order-container-left p{
+        margin-bottom: 0;
+    }
+
+    .order-container-right{
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+
+    .order-text-right,.order-text-left{
+        padding-bottom: 20px;
+    }
+
+    /* Séparateur ligne blanche*/
+    .order-vertical-separator{
+        display: none;
+    }
+
+    .order-horizontal-separator{
+        margin-top: 40px;
+    }
+
+    /* Bouton commander */
+    #order-submit{
+        max-width: 60%;
+    }
+
+    }
+
+    /******** TABLETTE PAYSAGE ********/
+    /*********************************/
+
+    @media only screen and (min-width : 768px) and (max-width : 1024px){
+
+        /*** Header ***/
+        #menu-1-40c32cb {
+            border: solid 1px black;
+        }
+        /******** ACCUEIL ******/
+
+        /* Image plante 'l'équipe' */
+
+        body:not(.rtl) .elementor-18 .elementor-element.elementor-element-61b8625 {
+            position: absolute;
+            width: 18%;
+            right: 50px !important;
+        }
+
+        /* Labels formulaire contact*/
+        .wpcf7-form p label{
+            max-width: 100%;
+        }
+
+        /* Paragraphes formulaire contact*/
+        .wpcf7-form p{
+            width: 40vw;
+        }
+
+        /*** COMMANDER ***/
+
+        .your-order-title{
+            margin-left: 2%;
+        }
+
+        /* Haut du formulaire */
+        
+        .order-container-top-images{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .order-container-top-images div{
+            width: 23%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .order-container-top-images h3{
+            color: white;
+            font-size: 1.8em;
+        }
+
+        .order-container-top-inputs p{
+            width: 100%;
+            padding-right: 6%;
+            padding-left: 6%;
+        }
+        .order-container-top-inputs p span{
+            width: 12%
+        }
+
+        /* Afin d'éviter que l'input touche le bord de l'écran*/
+        .order-container-right{
+            margin-right: 2%;
+        }
+
+        /* Contrôle aussi la taille des inputs car affiché en inline-block */
+        .wpcf7-form label {
+            max-width: 90%;
+        }
+
+        /*** NOUS RENCONTRER ***/
+        #contact-submit{
+            width: 90%;
+        }
+    }
+
+
+    /******* TABLETTE PORTRAIT********/
+    @media only screen and (min-width : 481px) and (max-width : 767px){
+
+        /*** Header ***/
+        #menu-1-40c32cb {
+            border: solid 1px black;
+        }
+
+            /******** ACCUEIL ********/
+
+            /* Etiquette boisson accueil*/
+            #post-213 > div > div > div.elementor-element.elementor-element-cc00cb1.e-con-full.e-flex.e-con.e-parent.e-lazyloaded{
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            /* Blocs saveurs accueil*/
+
+            #flavor-bloc-title h2{
+                font-size: 2rem;
+            }
+
+            #flavor-text-title p{
+                font-size: 1.2rem;
+            }
+
+            .elementor-element-4c29216,.elementor-element-eefb2c1,.elementor-element-a64a328,.elementor-element-9756de7{
+                min-height: 150px;
+                font-size: 1.2em;
+            }
+
+            /* Image des clients feedback-accueil*/
+            .elementor-element-364c7b6 img,.elementor-element-dc0d0bb img,.elementor-element-8c58d22 img{
+                max-height: 150px;
+                object-fit: contain;
+            }
+
+            /* Nom des clients feedback-accueil */
+            .customer-feedback-name div h2{
+                font-size: 2em !important;
+            }
+
+            .customer-feedback-text{
+                font-size: 1.2em !important;
+            }
+
+            /* Etiquette planty accueil */
+        .elementor-element-cc00cb1{
+            height: 900px;
+            background-size: cover;
+        }
+
+        /* Aligne le bouton du formulaire de contact */
+        p:has(#contact-submit){
+                width: 100%;
+                align-items: center;
+                margin: 0;
+        }
+
+        /* Bouton formulaire contact */
+        #contact-submit{
+            max-width: 40%;
+            margin: 0;
+        }
+
+
+
+        /***** COMMANDER ****/
+
+        /* Titre 'votre commande'*/
+        .your-order-title{
+            font-size: 1.5rem;
+        }
+
+        .order-container-top{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        
+        .order-container-top-images{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 70%;
+            max-width: 70%;
+            height: 700px;
+        }
+        .order-flavor-image-grapefruit,.order-flavor-image-lemon,.order-flavor-image-raspberry,.order-flavor-image-strawberry{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .order-container-top-images h3{
+            color: white;
+            font-size: 2.8em;
+        }
+        .order-container-top-inputs{
+            width: 35%;
+        }
+        .order-container-top-images div{
+            height: 150px;
+            background-size: cover;
+            width: 90%;
+        }
+        .order-container-top-inputs p{
+            flex-direction: column !important;
+            margin-top: 50px;
+            height: 600px;
+        }
+        .order-container-top-inputs span{
+            width: 90%;
+        }
+
+        /* Informations & Livraison */
+    form div:has(.order-vertical-separator) {
+        flex-direction: column;
+    }
+
+    .order-container-left{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .order-container-left p{
+        margin-bottom: 0;
+    }
+
+    .order-container-left label,.order-container-right label{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .order-container-right{
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+
+    .order-text-right,.order-text-left{
+        padding-bottom: 20px;
+        padding-left: 10%;
+    }
+
+    /* Séparateur ligne blanche*/
+    .order-vertical-separator{
+        display: none;
+    }
+
+    .order-horizontal-separator{
+        margin-top: 40px;
+    }
+
+    /* Bouton commander */
+    #order-submit{
+        max-width: 60%;
+    }
+        
+    }

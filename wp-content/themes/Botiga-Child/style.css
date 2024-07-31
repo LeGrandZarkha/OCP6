@@ -84,10 +84,6 @@ de leur classes css spécifiques
     font-size: 0.8em;
 }
 
-.flavor-text{
-    vertical-align: middle !important;
-}
-
 /* FORMULAIRE DE CONTACT */
 
 .form-button-style{
@@ -100,7 +96,6 @@ de leur classes css spécifiques
 .wpcf7 {
     display: flex;
     justify-content: center;
-    /*width: 90%;*/
 }
 
 .wpcf7-form{    
@@ -147,6 +142,7 @@ de leur classes css spécifiques
     
 } 
 
+/* Bouton d'envoi formulaire*/
 .wpcf7-submit:hover{
     color: white !important;
     background-color: #c02e45 !important;
@@ -566,23 +562,23 @@ p:has(#order-submit){
             }
 
             /* Etiquette planty accueil */
-        .elementor-element-cc00cb1{
-            height: 900px;
-            background-size: cover;
-        }
+            .elementor-element-cc00cb1{
+                height: 900px;
+                background-size: cover;
+            }
 
-        /* Aligne le bouton du formulaire de contact */
-        p:has(#contact-submit){
-                width: 100%;
-                align-items: center;
+            /* Aligne le bouton du formulaire de contact */
+            p:has(#contact-submit){
+                    width: 100%;
+                    align-items: center;
+                    margin: 0;
+            }
+
+            /* Bouton formulaire contact */
+            #contact-submit{
+                max-width: 40%;
                 margin: 0;
-        }
-
-        /* Bouton formulaire contact */
-        #contact-submit{
-            max-width: 40%;
-            margin: 0;
-        }
+            }
 
 
 
@@ -634,47 +630,47 @@ p:has(#order-submit){
         }
 
         /* Informations & Livraison */
-    form div:has(.order-vertical-separator) {
-        flex-direction: column;
-    }
+        form div:has(.order-vertical-separator) {
+            flex-direction: column;
+        }
 
-    .order-container-left{
-        width: 100%;
-        max-width: 100%;
-    }
+        .order-container-left{
+            width: 100%;
+            max-width: 100%;
+        }
 
-    .order-container-left p{
-        margin-bottom: 0;
-    }
+        .order-container-left p{
+            margin-bottom: 0;
+        }
 
-    .order-container-left label,.order-container-right label{
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+        .order-container-left label,.order-container-right label{
+            padding-left: 10%;
+            padding-right: 10%;
+        }
 
-    .order-container-right{
-        width: 100%;
-        max-width: 100%;
-        padding-bottom: 0;
-    }
+        .order-container-right{
+            width: 100%;
+            max-width: 100%;
+            padding-bottom: 0;
+        }
 
-    .order-text-right,.order-text-left{
-        padding-bottom: 20px;
-        padding-left: 10%;
-    }
+        .order-text-right,.order-text-left{
+            padding-bottom: 20px;
+            padding-left: 10%;
+        }
 
-    /* Séparateur ligne blanche*/
-    .order-vertical-separator{
-        display: none;
-    }
+        /* Séparateur ligne blanche*/
+        .order-vertical-separator{
+            display: none;
+        }
 
-    .order-horizontal-separator{
-        margin-top: 40px;
-    }
+        .order-horizontal-separator{
+            margin-top: 40px;
+        }
 
-    /* Bouton commander */
-    #order-submit{
-        max-width: 60%;
-    }
-        
-    }
+        /* Bouton commander */
+        #order-submit{
+            max-width: 60%;
+        }
+            
+        }

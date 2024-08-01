@@ -1,0 +1,6 @@
+{
+    "php.validate.enable": true,
+    "php.validate.executablePath": "/Applications/XAMPP/xamppfiles/bin/php-8.2.4",
+    "php.validate.run": "onType",
+    "php.suggest.basic": false
+}
